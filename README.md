@@ -55,3 +55,78 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+Requirements
+------------
+First, make sure you navigate to the project directory.
+```bash
+cd the-impact-of-news-information-acquisitionn-and-cognitoin
+```
+Then, you can load the required environment variables in `requirements.txt` 
+### Create and activate a virtual environment.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+never forget to activate the environments whenever you work on the projects.
+
+Data Cleaning
+------------
+We translated the Chinese version of the questionnaire into English, which can be found in `survey.md ` in the interim folder. By screening the questions in the questionnaire and selecting 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9' as our controlled variables, and 'Q13', 'Q14', 'Q15_A8' as our independent variables, we explored their effects on the three dependent variables'Q10', 'Q11', and 'Q12'.
+
+**Load Raw Data:**
+```bash
+python src/data/make_dataset.py load
+```
+**Data Cleaning Operations:**
+```bash
+加点代码，我不知道
+```
+**Save Cleaned Data:**
+The cleaned data is saved in the data/processed directory.
+
+Data Analysis
+------------
+
+**Ordinary Least Squares (OLS) Modeling:**
+We utilized Ordinary Least Squares (OLS) regression to investigate the impact of three explanatory variables on three response variables. 
+```bash
+python models/regression_model.py 
+```
+**Ordinal Logistic Regression for Robustness Checks:**
+To ensure the robustness of our findings, we conducted robustness checks using Original Logistic Regression. The logistic regression scripts are available in the models/robustness.py directory:
+```bash
+python models/rrobustness.py
+```
+
+Results
+------------
+turn to [walkthrough](./walkthrough.ipynb) for results.
+
+Docker
+------------
+[![Docker Pulls](https://img.shields.io/docker/pulls/your-dockerhub-username/your-image-name)](https://hub.docker.com/r/your-dockerhub-username/your-image-name)这个也是！
+
+**Dockerization:**
+
+This project has been Dockerized for easy deployment and reproducibility. Follow the steps below to run the project using Docker.
+
+**Prerequisites:**
+
+Make sure you have [Docker](https://www.docker.com/get-started) installed on your machine.
+
+### Build Docker Image
+```bash
+需要填写！docker build -t your-dockerhub-username/your-image-name .
+```
+### Run Docker Container
+```bash
+要修改！！docker run -p 8080:80 your-dockerhub-username/your-image-name
+```
+The application will be accessible at 这里别忘了http://localhost:8080.
+
+
