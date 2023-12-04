@@ -129,6 +129,4 @@ Make sure you have [Docker](https://www.docker.com/get-started) installed on you
 ```
 The application will be accessible at 这里别忘了http://localhost:8080.
 
-License
-------------
-This project is licensed under the [license需要弄吗先留着] - see the LICENSE file for details.
+
