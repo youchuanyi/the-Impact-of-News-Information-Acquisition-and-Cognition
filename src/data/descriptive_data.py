@@ -66,7 +66,7 @@ axes1[1, 1].set_xlabel('Family Income')
 axes1[1, 1].set_ylabel('Frequency')
 axes1[1, 1].tick_params(axis='x', labelsize=7)
 #q9
-Hometown_mapping = {1: 'Large cities', 2: 'Medium-sized cities',3: 'Small cities',4:'Towns',5: 'Villages', 6: 'Overseas'}
+Hometown_mapping = {3: 'Large cities', 4: 'Medium-sized cities',5: 'Small cities',6:'Towns',7: 'Villages', 8: 'Overseas'}
 data['Q9_mapped']=data['Q9'].map(Hometown_mapping)
 sns.countplot(x='Q9_mapped', data=data,ax=axes1[1,2])
 axes1[1, 2].set_title('Q9 Category of Hometown')
