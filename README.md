@@ -97,7 +97,7 @@ We utilized Ordinary Least Squares (OLS) regression to investigate the impact of
 ```bash
 python models/regression_model.py 
 ```
-**Ordinal Logistic Regression for Robustness Checks:**
+**Ordered Logistic Regression for Robustness Checks:**
 To ensure the robustness of our findings, we conducted robustness checks using Original Logistic Regression. The logistic regression scripts are available in the models/robustness.py directory:
 ```bash
 python models/rrobustness.py
