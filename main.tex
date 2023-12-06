@@ -72,13 +72,77 @@ Interest in political news is predominantly quite interested to neutral, with ve
 \end{aligned}
 \end{equation}
 
+\vspace{\baselineskip}
+Where,
+\begin{align*}
+\text{pol\_sat} & : \text{Political satisfaction} \\
+\text{eco\_sati} & : \text{Economic satisfaction} \\
+\text{lif\_work\_sati} & : \text{Life and work satisfaction} \\
+\beta_0 & :\text{intercept} \\
+\beta_1, \beta_2, \beta_3 & : \text{Regression coefficients} \\
+\gamma & : \text{Coefficient for the control variables} \\
+\text{controls} & : \text{Vector of control variables} \\
+\epsilon_1, \epsilon_2, \epsilon_3 & : \text{Error terms, unexplained factors in the model}
+\end{align*}
+
+We constructed three regression models to explore the determinants of political satisfaction (pol\_sat), economic satisfaction (eco\_sati), and life work satisfaction (lif\_work\_sati). These models integrate respondents' demographic details, including age, gender, political affiliation, highest level of education, institution level, field of study, annual household income, and hometown, as control variables.
+
+Moreover, the models incorporate individual factors such as interest in political news, time allocation, and exposure to overseas information as explanatory variables. The aim is to comprehensively investigate satisfaction levels in the domains of politics, economics, and life\&work, considering a spectrum of personal and behavioral aspects. This modeling approach establishes a robust framework for a nuanced understanding of the factors influencing individuals' satisfaction levels.
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
 \subsection{Robustness}
+For the robustness check, an ordered logistic regression model is employed.
 
+\begin{align}
+\text{Logit}(P(\text{pol\_sati} \leq j)) &= \alpha_j + \beta_1 \cdot \text{interest} + \beta_2 \cdot \text{time} + \beta_3 \cdot \text{overseas} + \gamma \cdot \text{controls} \nonumber \\
+\text{Logit}(P(\text{eco\_sati} \leq j)) &= \alpha_j + \beta_1 \cdot \text{interest} + \beta_2 \cdot \text{time} + \beta_3 \cdot \text{overseas} + \gamma \cdot \text{controls} \nonumber \\
+\text{Logit}(P(\text{lif\_work\_sati} \leq j)) &= \alpha_j + \beta_1 \cdot \text{interest} + \beta_2 \cdot \text{time} + \beta_3 \cdot \text{overseas} + \gamma \cdot \text{controls} \nonumber
+\end{align}
 
+\vspace{\baselineskip}
+Where,
+\begin{align*}
+\text{Logit}(P(\text{pol\_sati} \leq j)) & : \text{Ordered log-odds for political satisfaction} \\
+\text{Logit}(P(\text{eco\_sati} \leq j)) & : \text{Ordered log-odds for economic satisfaction} \\
+\text{Logit}(P(\text{lif\_work\_sati} \leq j)) & : \text{Ordered log-odds for life and work satisfaction} \\
+\alpha_j & : \text{Threshold parameters for different levels of satisfaction} \\
+\beta_1, \beta_2, \beta_3 & : \text{Regression coefficients} \\
+\gamma & : \text{Coefficient for the control variables} \\
+\text{controls} & : \text{Vector of control variables}
+\end{align*}
+
+Here, each equation represents an ordered logit model of political satisfaction, economic satisfaction, and life\&work satisfaction at different satisfaction levels. The model covers threshold parameters ($\alpha_j$), regression coefficients ($\beta_1, \beta_2, \beta_3$) reflecting the effects of explanatory variables, and coefficients of control variables ($\gamma$) for each satisfaction level.
+
+In this way, we are able to check the consistency of the estimated coefficients under different specifications and thus assess the robustness of the results. The inclusion of control variables ensures that any observed effects are robust to bias due to omitted variables
 \section{Results}
+\subsection{OLS Regression}
+\input{table1.tex}
 
-
+The findings in Table 1 reveal that the p-values associated with all three explanatory variables are below the conventional significance threshold of 0.05. This suggests that each of these variables is statistically significant. Specifically, the coefficient for Q13 (interest in political news) is estimated at 0.1652. This implies that, while keeping all other variables constant, a one-unit increase in students' interest in political news corresponds to a 0.1652 unit rise in their satisfaction with politics (pol\_sati). Q14 has a coefficient of indicates that the more frequently political news is read, political satisfaction decreases by 0.0237 units. Similarly, the more exposure to overseas news, the less satisfied they are with politics, decreasing by 0.1993 units.
+\vspace{\baselineskip}
+\input{table2.tex}
+According to results in Table 2, the positive coefficient of 0.1451 for Q13(interest in political news) suggests that, holding other variables constant, a one-unit increase in students' interest in political news is associated with a 0.1451 unit increase in satisfaction with economy. The coefficient for Q14 is -0.0237, indicating that there is no statistically significant relationship between time allocation (Q14) and satisfaction with economy, as the P-value is 0.381.The negative coefficient of -0.1993 for Q15\_A8 suggests that, holding other variables constant, a one-unit increase in exposure to overseas information is associated with a 0.1993 unit decrease in satisfaction with economy. The P-value of 0.002 indicates that this relationship is statistically significant.
+\vspace{\baselineskip}
+\input{table3.tex}
+The results in Table 3 provide insights into the coefficients of the explanatory variables Q13, Q14, and Q15\_A8 for the dependent variable Q12(life\&work satisfaction).The positive coefficient of 0.1974 for Q13 suggests that, holding other variables constant, a one-unit increase in students' interest in political news is associated with a 0.1974 unit increase in satisfaction with life\&work.The coefficient for Q14 is -0.0371, indicating that there is no statistically significant relationship between time allocation (Q14) and satisfaction with life\&work, as the P-value is 0.233.The negative coefficient of -0.1233 for Q15\_A8 suggests that, holding other variables constant, a one-unit increase in exposure to overseas information is associated with a 0.1233 unit decrease in satisfaction with life\&work. The P-value of 0.093 indicates a marginal level of significance.
+\newpage
 \section{Conclusion}
+\subsection{Political Satisfaction}
+Interest in political news (Q13) has a positive effect on political satisfaction, with a coefficient of 0.1652. This means for every unit increase in interest in political news, political satisfaction increases by 0.1652 units, holding other variables constant.
+Frequency of reading political news (Q14) has a slightly negative impact, decreasing political satisfaction by 0.0237 units for each unit increase in frequency.
+Exposure to overseas news (Q15 A8) negatively impacts political satisfaction, with a coefficient of -0.1993. This suggests that more exposure to overseas news leads to a decrease in political satisfaction by 0.1993 units.
+\subsection{Economic Satisfaction}
+Interest in political news (Q13) positively correlates with economic satisfaction, with a coefficient of 0.1451. An increase in interest in political news leads to a 0.1451 unit increase in economic satisfaction.
+The time spent on news (Q14) does not have a statistically significant relationship with economic satisfaction, as indicated by the non-significant P-value.
+Exposure to overseas news (Q15 A8) has a significant negative effect, with a coefficient of -0.1993. More exposure to overseas news decreases satisfaction with the economy by 0.1993 units.
+\subsection{Life and Work Satisfaction}
+Interest in political news (Q13) shows a positive correlation, with a coefficient of 0.1974. This implies that an increase in interest in political news is associated with a 0.1974 unit increase in satisfaction with life and work.
+The time allocated to news (Q14) does not show a significant relationship with life and work satisfaction.
+Exposure to overseas news (Q15 A8) has a negative impact, with a coefficient of -0.1233. Increasing exposure to overseas news is associated with a decrease in life and work satisfaction by 0.1233 units, although this relationship has a marginal level of significance
 
-
+\newpage
+\section{Appendix}
+\subsection{Odered Logistics Regression}
+\input{table4-robust.tex}
 \end{document}
