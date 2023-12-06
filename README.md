@@ -78,14 +78,10 @@ Data Cleaning
 ------------
 We translated the Chinese version of the questionnaire into English, which can be found in `survey.md ` in the interim folder. By screening the questions in the questionnaire and selecting 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9' as our controlled variables, and 'Q13', 'Q14', 'Q15_A8' as our independent variables, we explored their effects on the three dependent variables'Q10', 'Q11', and 'Q12'.
 
-**Load Raw Data:**
+**Load and Process Raw Data:**
 ```bash
 python src/data/make_dataset.py load
-```
-**Data Cleaning Operations:**
-```bash
-加点代码，我不知道
-```
+
 **Save Cleaned Data:**
 The cleaned data is saved in the data/processed directory.
 
