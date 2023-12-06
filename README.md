@@ -100,7 +100,7 @@ python models/regression_model.py
 **Ordered Logistic Regression for Robustness Checks:**
 To ensure the robustness of our findings, we conducted robustness checks using Original Logistic Regression. The logistic regression scripts are available in the models/robustness.py directory:
 ```bash
-python models/rrobustness.py
+python models/robustness.py
 ```
 
 Results
