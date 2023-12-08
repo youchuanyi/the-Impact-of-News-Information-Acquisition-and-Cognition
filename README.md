@@ -24,10 +24,10 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── src                <- Source code for use in this project.
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── descriptive_data.py
-    │   │   └── __init__.py
+        │
+        ├── data           <- Scripts to download or generate data
+            └── descriptive_data.py
+            └── __init__.py
 
 --------
 
