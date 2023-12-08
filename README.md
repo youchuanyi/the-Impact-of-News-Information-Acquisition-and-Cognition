@@ -103,6 +103,5 @@ docker build -t master
 ```bash
 docker run -it --rm master /bin/sh
 ```
-The application will be accessible at 这里别忘了http://localhost:8080.
 
 
