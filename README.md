@@ -86,7 +86,6 @@ turn to [walkthrough](./walkthrough.ipynb) for results.
 
 Docker
 ------------
-[![Docker Pulls](https://img.shields.io/docker/pulls/your-dockerhub-username/your-image-name)](https://hub.docker.com/r/your-dockerhub-username/your-image-name)这个也是！
 
 **Dockerization:**
 
@@ -98,11 +97,11 @@ Make sure you have [Docker](https://www.docker.com/get-started) installed on you
 
 ### Build Docker Image
 ```bash
-需要填写！docker build -t your-dockerhub-username/your-image-name .
+docker build -t master
 ```
 ### Run Docker Container
 ```bash
-要修改！！docker run -p 8080:80 your-dockerhub-username/your-image-name
+docker run -it --rm master /bin/sh
 ```
 The application will be accessible at 这里别忘了http://localhost:8080.
 
