@@ -41,7 +41,7 @@ Requirements
 ------------
 First, make sure you navigate to the project directory.
 ```bash
-cd the-impact-of-news-information-acquisitionn-and-cognitoin
+cd the-impact-of-news-information-acquisition-and-cognitoin
 ```
 Then, you can load the required environment variables in `requirements.txt` 
 ### Create and activate a virtual environment.
