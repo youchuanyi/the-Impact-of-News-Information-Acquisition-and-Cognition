@@ -97,11 +97,13 @@ Make sure you have [Docker](https://www.docker.com/get-started) installed on you
 
 ### Build Docker Image
 ```bash
-docker build -t master
+docker build -t the-impact-of-news-information-acquisition-and-cognition
+
 ```
 ### Run Docker Container
 ```bash
-docker run -it --rm master /bin/sh
+docker run -it the-impact-of-news-information-acquisition-and-cognition 
+
 ```
 
 
