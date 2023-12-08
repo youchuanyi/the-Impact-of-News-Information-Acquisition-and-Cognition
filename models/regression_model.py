@@ -1,6 +1,14 @@
 import pandas as pd
 import statsmodels.api as sm
-data = pd.read_csv('/Users/zhengchuyi/Desktop/the-impact-of-news-information-acquisition-and-cognition/data/processed/processed_data.csv')
+import os
+current_directory = os.path.dirname(__file__)
+grandparent_directory = os.path.dirname(current_directory)
+print(grandparent_directory)
+data_relative_path = os.path.join(grandparent_directory, 'data', 'processed')
+data_file = os.path.join(data_relative_path, 'processed_data.csv')
+data = pd.read_csv(data_file)
+pd.set_option('display.max_columns', None)
+description = data.describe()
 print(data.head())
 gender = data['Q3']
 poli_afli = data['Q4']
