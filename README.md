@@ -39,7 +39,10 @@ First, make sure you navigate to the project directory.
 ```bash
 cd the-impact-of-news-information-acquisition-and-cognitoin
 ```
-Then, you can load the required environment variables in `requirements.txt` 
+Then, you can load the required environment variables in `requirements.txt
+
+Because jupyter notebook is not very compatible with ipywidgets, Please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb) to see interactive component.
+
 ### Create and activate a virtual environment.
 ```bash
 python -m venv .venv
@@ -79,6 +82,8 @@ python models/robustness.py
 Results
 ------------
 turn to [walkthrough](./walkthrough.ipynb) for results.
+
+About interactive component: Please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb)  to use interactive component
 
 Docker
 ------------
