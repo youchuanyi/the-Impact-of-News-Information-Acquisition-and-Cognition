@@ -41,7 +41,7 @@ cd the-impact-of-news-information-acquisition-and-cognitoin
 ```
 Then, you can load the required environment variables in `requirements.txt
 
-Because jupyter notebook is not very compatible with ipywidgets, Please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb) to see interactive component.
+Because jupyter notebook is not very compatible with ipywidgets, if interactive components goes wrong, please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb) to see interactive component.
 
 ### Create and activate a virtual environment.
 ```bash
@@ -83,7 +83,7 @@ Results
 ------------
 turn to [walkthrough](./walkthrough.ipynb) for results.
 
-About interactive component: Please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb)  to use interactive component
+About interactive component: if interactive components goes wrong, please use jupyterlab (instead of jupyter notebook) to open  [walkthrough](./walkthrough.ipynb)  to use interactive component
 
 Docker
 ------------
